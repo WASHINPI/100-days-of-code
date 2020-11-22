@@ -1,0 +1,464 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201122.222508.2593.0.001.json",
+    "dumpEventTime": "2020-11-22T22:25:08Z",
+    "dumpEventTimeStamp": "1606062308775",
+    "processId": 2593,
+    "cwd": "/works/100-days-of-code",
+    "commandLine": [
+      "/home/washi/.nvm/versions/node/v12.16.1/bin/node",
+      "-r",
+      "/home/washi/.vscode/extensions/wallabyjs.quokka-vscode-1.0.331/dist/wallaby/node_modules/esm",
+      "/home/washi/.vscode/extensions/wallabyjs.quokka-vscode-1.0.331/dist/wallaby/server.js",
+      "runner",
+      "0",
+      "40001",
+      "quokka@1.0.0",
+      "",
+      "/works/100-days-of-code/node_modules",
+      "quokka_fake_path/original",
+      "",
+      ""
+    ],
+    "nodejsVersion": "v12.16.1",
+    "glibcVersionRuntime": "2.23",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-123-generic",
+    "osVersion": "#126~16.04.1-Ubuntu SMP Wed Oct 21 13:48:05 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 44244200,
+        "nice": 2116600,
+        "sys": 11057200,
+        "idle": 393333000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 40438300,
+        "nice": 486000,
+        "sys": 10054400,
+        "idle": 33219200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 43837100,
+        "nice": 1883200,
+        "sys": 10695900,
+        "idle": 33148700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+        "speed": 2294,
+        "user": 38366400,
+        "nice": 1625900,
+        "sys": 9483300,
+        "idle": 33859500,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "28:e3:47:11:93:07",
+        "address": "192.168.10.109",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "28:e3:47:11:93:07",
+        "address": "fe80::54b4:ae43:70a7:c42",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "washi"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b278f5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x00000000009f13ec",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b5da9e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b5de19",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d0a765",
+      "symbol": " [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d0adf6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d1760a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d18515",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d1afcc",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ce19bb",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x00000000010246ce",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    },
+    {
+      "pc": "0x00000000013a71b9",
+      "symbol": " [/home/washi/.nvm/versions/node/v12.16.1/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2152583168,
+    "totalCommittedMemory": 2150882504,
+    "usedMemory": 2147255232,
+    "availableMemory": 47445400,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1270312,
+        "capacity": 1047456,
+        "used": 285704,
+        "available": 761752
+      },
+      "old_space": {
+        "memorySize": 2075541504,
+        "committedMemory": 2075179208,
+        "capacity": 2073240304,
+        "used": 2072836240,
+        "available": 404064
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 393280,
+        "capacity": 363424,
+        "used": 363424,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 807000,
+        "capacity": 608480,
+        "used": 608480,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 73150464,
+        "committedMemory": 73150464,
+        "capacity": 73125792,
+        "used": 73125792,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 142.891,
+    "kernelCpuSeconds": 3.69681,
+    "cpuConsumptionPercent": 164.705,
+    "maxRss": 2322325504,
+    "pageFaults": {
+      "IORequired": 149,
+      "IONotRequired": 706596
+    },
+    "fsActivity": {
+      "reads": 33280,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 64.4137,
+    "kernelCpuSeconds": 1.19961,
+    "cpuConsumptionPercent": 73.7228,
+    "fsActivity": {
+      "reads": 29744,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "GNOME_KEYRING_PID": "",
+    "USER": "washi",
+    "UNITY_HAS_3D_SUPPORT": "true",
+    "SNAP_COMMON": "/var/snap/code/common",
+    "UNITY_DEFAULT_PROFILE": "unity",
+    "LANGUAGE": "en_US",
+    "no_proxy": "localhost,127.0.0.0/8,::1",
+    "UPSTART_INSTANCE": "",
+    "LC_TIME": "en_US.UTF-8",
+    "SNAP_INSTANCE_KEY": "",
+    "XDG_SEAT": "seat0",
+    "SESSION": "ubuntu",
+    "XDG_SESSION_TYPE": "x11",
+    "COMPIZ_CONFIG_PROFILE": "ubuntu",
+    "SHLVL": "1",
+    "SNAP_LIBRARY_PATH": "/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void",
+    "HOME": "/home/washi",
+    "QT4_IM_MODULE": "xim",
+    "NO_PROXY": "localhost,127.0.0.0/8,::1",
+    "SNAP_USER_DATA": "/home/washi/snap/code/50",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_BIN": "/home/washi/.nvm/versions/node/v12.16.1/bin",
+    "QT_LINUX_ACCESSIBILITY_ALWAYS_ON": "1",
+    "GTK_MODULES": "gail:atk-bridge:unity-gtk-module",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "LC_MONETARY": "en_US.UTF-8",
+    "INSTANCE": "",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-LdTnYrMzxx",
+    "LIBVIRT_DEFAULT_URI": "qemu:///system",
+    "SNAP_REVISION": "50",
+    "GNOME_KEYRING_CONTROL": "",
+    "NVM_DIR": "/home/washi/.nvm",
+    "QT_QPA_PLATFORMTHEME": "appmenu-qt5",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "IM_CONFIG_PHASE": "1",
+    "SESSIONTYPE": "gnome-session",
+    "UPSTART_JOB": "unity7",
+    "LOGNAME": "washi",
+    "GTK_IM_MODULE": "ibus",
+    "SNAP_CONTEXT": "1uAEkGWeNIDmpgYqVvCBKw7CNUPbXpg4ujfbzOcTJPcpAZ7GutS1",
+    "WINDOWID": "117440522",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "SNAP_VERSION": "e5a624b7",
+    "XDG_SESSION_ID": "c2",
+    "TERM": "xterm-256color",
+    "SNAP_INSTANCE_NAME": "code",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "GTK2_MODULES": "overlay-scrollbar",
+    "PATH": "/home/washi/.nvm/versions/node/v12.16.1/bin:/home/washi/bin:/home/washi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/washi/Android/Sdk/tools:/home/washi/Android/Sdk/tools/bin:/home/washi/Android/Sdk/platform-tools:/home/washi/Android/Sdk/emulator:/usr/local/bin:/usr/bin",
+    "SESSION_MANAGER": "local/washi:@/tmp/.ICE-unix/3537,unix/washi:/tmp/.ICE-unix/3537",
+    "GDM_LANG": "en_US",
+    "PAPERSIZE": "letter",
+    "LC_ADDRESS": "en_US.UTF-8",
+    "XDG_MENU_PREFIX": "gnome-",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "SNAP_DATA": "/var/snap/code/50",
+    "XDG_RUNTIME_DIR": "/run/user/1000/snap.code",
+    "COMPIZ_BIN_PATH": "/usr/bin/",
+    "DISPLAY": ":0",
+    "LC_TELEPHONE": "en_US.UTF-8",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XMODIFIERS": "@im=ibus",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XAUTHORITY": "/home/washi/.Xauthority",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/washi",
+    "SNAP_USER_COMMON": "/home/washi/snap/code/common",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "GSETTINGS_SCHEMA_DIR": "/snap/code/50/usr/share/glib-2.0/schemas",
+    "SNAP_COOKIE": "1uAEkGWeNIDmpgYqVvCBKw7CNUPbXpg4ujfbzOcTJPcpAZ7GutS1",
+    "SNAP_ARCH": "amd64",
+    "GDK_PIXBUF_MODULEDIR": "/snap/code/50/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders",
+    "SHELL": "/bin/bash",
+    "DISABLE_WAYLAND": "1",
+    "LC_NAME": "en_US.UTF-8",
+    "SNAP_REEXEC": "",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "SNAP_NAME": "code",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "LC_MEASUREMENT": "en_US.UTF-8",
+    "UPSTART_EVENTS": "xsession started",
+    "GPG_AGENT_INFO": "/home/washi/.gnupg/S.gpg-agent:0:1",
+    "UPSTART_SESSION": "unix:abstract=/com/ubuntu/upstart-session/1000/2835",
+    "LC_IDENTIFICATION": "en_US.UTF-8",
+    "GDK_PIXBUF_MODULE_FILE": "/home/washi/snap/code/common/.cache/gdk-pixbuf-loaders.cache",
+    "XDG_VTNR": "7",
+    "QT_IM_MODULE": "ibus",
+    "PWD": "/works/100-days-of-code",
+    "CLUTTER_IM_MODULE": "xim",
+    "NVM_CD_FLAGS": "",
+    "ANDROID_HOME": "/home/washi/Android/Sdk",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg",
+    "SNAP_REAL_HOME": "/home/washi",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "LC_NUMERIC": "en_US.UTF-8",
+    "SNAP": "/snap/code/50",
+    "LC_PAPER": "en_US.UTF-8",
+    "VTE_VERSION": "4205",
+    "JOB": "unity-settings-daemon",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "VSCODE_CLI": "1",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Unity",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/washi/.config/Code/CachedData/e5a624b788d92b8d34d1392e4c4d9789406efe8f",
+    "VSCODE_LOGS": "/home/washi/.config/Code/logs/20201121T220758",
+    "VSCODE_IPC_HOOK": "/run/user/1000/snap.code/vscode-a3cdd3a3-1.51.1-main.sock",
+    "VSCODE_PID": "8155",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "PIPE_LOGGING": "true",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_IPC_HOOK_EXTHOST": "/run/user/1000/snap.code/vscode-ipc-75f69936-b0b9-45e5-8e8b-eebb838b30b9.sock",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_LOG_STACK": "false",
+    "BREAKPAD_DUMP_LOCATION": "/home/washi/.config/Code/exthost Crash Reports",
+    "CRASH_REPORTER_START_OPTIONS": "{\"companyName\":\"Microsoft\",\"productName\":\"VSCode\",\"submitURL\":\"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=c015ba58-73ab-4d35-a96f-0f79fe5e5412&iid=c015ba58-73ab-4d35-a96f-0f79fe5e5412&sid=c015ba58-73ab-4d35-a96f-0f79fe5e5412\",\"uploadToServer\":true}",
+    "WALLABY_PRODUCTION": "true",
+    "WALLABY_USE_WSL": "false",
+    "DEBUG": "wallaby:.*",
+    "DEBUG_COLORS": "no",
+    "quokka": "{\"globalConfigFile\":\"/home/washi/.quokka/config.json\",\"tempDir\":\"/home/washi/.quokka/data/goabd\",\"autoDetect\":true,\"pro\":false,\"builtInPlugins\":[],\"stdEsm\":true}",
+    "undefined": "",
+    "ESM_OPTIONS": "{\"await\":true}",
+    "WALLABY_ENV": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 30981,
+      "hard": 30981
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
